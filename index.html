@@ -7,7 +7,7 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; }
         #dinero, #edad { font-size: 24px; font-weight: bold; }
-        .boton { font-size: 20px; padding: 10px; margin: 5px; }
+        .boton { font-size: 20px; padding: 10px; margin: 5px; cursor: pointer; }
         .tienda { display: flex; justify-content: center; flex-wrap: wrap; }
         .producto { width: 180px; margin: 10px; }
         .producto img { width: 150px; height: auto; }
@@ -47,7 +47,7 @@
     </div>
 
     <script>
-        let dinero = 500000;
+        let dinero = 5000;
         let nivel = 1;
         let edad = 10;
         let dineroPorSegundo = 500;
@@ -93,7 +93,7 @@
         }
 
         setInterval(() => { dinero += dineroPorSegundo; actualizarInterfaz(); }, 1000);
-        setInterval(() => { edad++; actualizarInterfaz(); }, 120000); 
+        setInterval(() => { edad++; actualizarInterfaz(); }, 120000);
     </script>
 </body>
 </html>
